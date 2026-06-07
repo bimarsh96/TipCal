@@ -1,6 +1,6 @@
 
 function fmt(m) {
-  return m.toLocaleString('en-US', { minimumFractionDigits: 2 });
+  return "$"  + m.toLocaleString('en-US', { minimumFractionDigits: 2 });
 }
 
 const tipPcts = [5, 10, 12, 14, 15, 18, 20, 25, 30, 50];
@@ -53,10 +53,8 @@ function calculate() {
   const total = bill + tip;
   const perPerson = total / people;
 
-  document.getElementById('result-tip').textContent = '$' + fmt(tip);
-  document.getElementById('result-total').textContent = '$' + fmt(total);
-  document.getElementById('result-person').textContent = '$' + fmt(perPerson);
-
+  document.getElementById('result-tip').textContent = fmt(tip);
+  document.getElementById('result-total').textContent =  fmt(total);
   document.querySelector('.result-section').style.display = 'block';
 }
 
