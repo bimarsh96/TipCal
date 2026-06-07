@@ -1,0 +1,181 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+h2 {
+  color: #2c5f2e;
+}
+
+/* PROJECT 1 */
+table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+thead tr {
+  background: #2c2c2c;
+  color: white;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  text-align: right;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+tbody tr.highlight {
+  background: #eaf3de;
+  font-weight: bold;
+  color: #3b6d11;
+}
+
+tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.calculator-container {
+  background: #ebebeb;
+  padding: 16px 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* PROJECT 2 */
+.result-section {
+  background: #ebebeb;
+  padding: 16px 20px;
+  border-radius: 10px;
+  max-width: 460px;
+  margin-bottom: 20px;
+}
+
+.result-section h3 {
+  background: #4a7c3f;
+  color: white;
+  padding: 10px 14px;
+  margin: -16px -20px 16px -20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.result-section p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.result-section span {
+  margin-left: 60px;
+}
+
+.form-wrap {
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 460px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  font-size: 14px;
+  color: #333;
+  width: 140px;
+}
+
+.input-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.prefix {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.suffix {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.has-prefix {
+  padding-left: 22px;
+}
+
+.has-suffix {
+  padding-right: 28px;
+}
+
+.button-row,
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-calculate,
+.btn-calc {
+  padding: 10px 20px;
+  background: #4a7c3f;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-calculate:hover,
+.btn-calc:hover {
+  background: #3a6e2f;
+}
+
+.btn-clear1,
+.btn-clear2 {
+  padding: 10px 20px;
+  background: #ccc;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
