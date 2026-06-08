@@ -55,6 +55,7 @@ function calculate() {
 
   document.getElementById('result-tip').textContent = fmt(tip);
   document.getElementById('result-total').textContent =  fmt(total);
+  document.getElementById('result-shared').textContent = fmt(perPerson);
   document.querySelector('.result-section').style.display = 'block';
 }
 
@@ -67,3 +68,5 @@ function clearAll() {
 
 document.querySelector('.btn-calc').addEventListener('click', calculate);
 document.querySelector('.btn-clear2').addEventListener('click', clearAll);
+
+
